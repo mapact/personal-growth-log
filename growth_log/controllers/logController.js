@@ -1,0 +1,1 @@
+const logRepository = require('../repositories/logRepository');

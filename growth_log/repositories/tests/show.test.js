@@ -8,35 +8,13 @@ describe('logRepository.create', () => {
     });
     afterAll(db.disconnect);
 
-    it('should throw an error if I send in an object without a title', (done) => {
-        logRepository.create({})
-            .catch(err => {
-                expect(err).to.be.ok;
-                expect(err.message).to.equal('Document failed validation');
-                done();
-            });
-    });
-
-
     it('should throw an error if I send in an object without an entry', (done) => {
         logsRepository.create({
             title: '',
         })
             .catch(err => {
                 expect(err).to.be.ok;
-                expect(err.message).to.equal('Document failed validation');
-                done();
-            });
-    });
-
-    it('should throw an error if I send in an object without "isShipBroken"', (done) => {
-        logsRepository.create({
-            title: '',
-            entry: '',
-        })
-            .catch(err => {
-                expect(err).to.be.ok;
-                expect(err.message).to.equal('Document failed validation');
+                expect(err.message).to.equal('Invalid entry: please specify entry');
                 done();
             });
     });

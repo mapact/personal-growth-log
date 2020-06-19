@@ -13,7 +13,7 @@ module.exports = {
         const connection = await client.connect();
         console.log('Connected to MongoDB: Personal Growth Logs');
         const db = connection.db(DB_NAME);
-        this.log = db.collection(COLLECTIONS.LOGS);
+        this.logs = db.collection(COLLECTIONS.LOGS);
     },
     disconnect () {
         return client.close();

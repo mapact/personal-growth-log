@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add budget</title>
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a new log today!</h1>
+        <form action="/" method="POST">
+            <div class="container" type="input">
+            <label for="date">Date</label>
+            <input type="text" name="date" id="date" placeholder="eg: April 5"/>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="eg: Groceries"/>
+            <label for="from">From</label>
+            <input type="text" name="from" id="from" placeholder="eg: NTUC"/>
+            <label for="amount">Amount</label>
+            <input type="text" name="amount" id="amount" placeholder="eg: 25"/>
+            <label for="tags">Tags</label>
+            <input type="text" name="tags" id="tags" placeholder="eg: necessities"/>
+            </div>
+            <div class="container" type="button">
+                <button name="action" type="submit" value="Add budget">Add budget</button>
+            </div>
+        </form>
+        
+    </div>
+    
+</body>
+</html>

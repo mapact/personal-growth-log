@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget</title>
+    <title>Logs</title>
     <%- include('./partials/head.ejs') %>
 </head>
 <body>
     <div class="container">
-        <h1>Hello Adult Life</h1>
+        <h1>A timeline of learnings</h1>
         <table class="table" style="width:100%">
-            <% budget.forEach((item, index) => { %>
+            <% logs.forEach((item, index) => { %>
                 <tr> 
                     <td><%=item.date%></td>
-                    <td><a href="budget/<%=index%>"><%=item.name%></a></td>
+                    <td><a href="logs/<%=index%>"><%=item.name%></a></td>
                     <td><%=item.amount%></td>
                 </tr>
             <% }) %>
         </table>
-        <a class="button" href="/budget/new">New budget</a>
+        <a class="button" href="/logs/new">New log</a> 
     </div>
 </body>
 </html>

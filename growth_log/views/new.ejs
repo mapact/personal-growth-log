@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add budget</title>
+    <title>Add log</title>
     <%- include('./partials/head.ejs') %>
 </head>
 <body>
     <div class="container">
-        <h1>Add a new log today!</h1>
-        <form action="/" method="POST">
-            <div class="container" type="input">
-            <label for="date">Date</label>
-            <input type="text" name="date" id="date" placeholder="eg: April 5"/>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="eg: Groceries"/>
-            <label for="from">From</label>
-            <input type="text" name="from" id="from" placeholder="eg: NTUC"/>
-            <label for="amount">Amount</label>
-            <input type="text" name="amount" id="amount" placeholder="eg: 25"/>
-            <label for="tags">Tags</label>
-            <input type="text" name="tags" id="tags" placeholder="eg: necessities"/>
-            </div>
-            <div class="container" type="button">
-                <button name="action" type="submit" value="Add budget">Add budget</button>
+        <h1>Add a new growth log!</h1>
+        <form action="/" method="POST" id="create-log-form">
+            <div class="container py-5">
+                <div class="form-group title">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title-input" name="title">
+                </div>
+                <div class="form-group description">
+                    <label for="entry">Description</label>
+                    <textarea class="form-control" id="description-input" name="description"></textarea>
+                </div> Rate growth points today
+                <div class="rate-of-growth form-check-inline">
+                    <input class="rate-of-growth form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="rate-of-growth form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox5">5</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a
+                    href="/"
+                    class="btn btn-secondary"
+                >
+                    Go Back
+                </a>
             </div>
         </form>
         

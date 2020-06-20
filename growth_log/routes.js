@@ -1,18 +1,15 @@
 const logController = require('./controllers/logController');
 
 module.exports = app => {
+    // create post 
+    app.post('/', logController.create);
     app.get('/', logController.getAll);
 
-    //get the create form api
-    app.get('/logs/new', logController.create);
-
-    // create post api
-    app.post('/', logController.create);
-    // Min Shan's show route
-    // app.get('/:name', logController.getOneByName);
-
-    // Yinsheng's show route
-    // app.get('/shop/:name', shopController.show);
+    //get create form
+    app.get('/new', logController.getForm);
+    
+    // show route
+    //app.get('/:log', logController.getOne);
 
     // delete route
     // app.delete('/shop/:name', shopController.destroy);

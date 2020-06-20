@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 
 const MONGO_URL = 'mongodb://localhost:27017';
-const DB_NAME = 'homework';
+const DB_NAME = 'project2';
 const COLLECTIONS = {
     LOGS: 'logs',
 };

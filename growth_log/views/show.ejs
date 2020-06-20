@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log</title>
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <div class="container">
+        <h1><%=logs.title%></h1>
+        <a class="button" href="/">back</a>
+        <ul>
+            <li>Title: <%=logs.title%></li>
+            <li>Description: <%=logs.description%></li>
+            <li>Rate: $<%=budget.rate%></li>
+            <!-- <li>tags: <%=budget.tags%></li> -->
+        </ul>
+    </div>
+</body>
+</html>

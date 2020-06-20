@@ -6,20 +6,30 @@ const moment = require('moment');
 module.exports = {
     async getAll (req, res) {
         const logs = await logRepository.getAll();
-        // moment.locale('sg');
-        // logs[0].date = moment('20201001', 'YYYYMMDD');
+        console.log(logs)
+        //moment.locale('sg');
+        //logs[0].date = moment('20201001', 'YYYYMMDD');
         res.render('index', { logs });
+    },
+    getForm (req, res) {
+        // res.render('new', { date: moment().format('YYYY-MM-DDTHH:mm') });
+        res.render('new', { logs });
     },
     async create (req, res) {
         try {
-            req.body.date = moment(req.body.date).toISOString();
             //ajvLogsValidator.logs.validate(req.body);
             const logs = await logRepository.create(req.body);
-            httpResponseFormatter.formatOkResponse(res, logs);
-            console.log(logs)
+            return res.redirect('/');
         } catch (err) {
             console.log('error', err);
-            httpResponseFormatter.formatErrorResponse(res, err);
         }
+    },
+    async getOne (req, res) {
+        try{
+            const log = await logRepository.getOne(req.params.title);
+            res.render('show', { logs });
+        } catch (err) {
+            console.log('error', err);
+        }   
     }
 };

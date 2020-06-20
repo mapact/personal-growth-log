@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logs</title>
-    <%- include('./partials/head.ejs') %>
-</head>
+    <%- include('./partials/head.ejs') %> -->
+<!-- </head>
 <body>
     <div class="container">
         <h1>A timeline of learnings</h1>
@@ -21,4 +21,31 @@
         <a class="button" href="/logs/new">New log</a> 
     </div>
 </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+    </head>
+    <body>
+        <div class="container py-4">
+            <h1>A timeline of learnings</h1>
+            <table class="table" style="width:100%">
+            <% logs.forEach((item, index) => { %>
+                <tr> 
+                    <td><%=item.title%></td>
+                    <td><a href="logs/<%=index%>"><%=item.description%></a></td>
+                    <td><%=item.rate%></td>
+                </tr>
+            <% }) %>
+            </table>
+            <a
+                href="new"
+                class="btn btn-primary"
+            >
+                new log
+            </a>
+        </div>
+    </body>
 </html>

@@ -39,7 +39,8 @@ module.exports = {
     },
     async updateOne (req, res) {
         try {
-            
+            const logs = await logRepository.update(req.params.id);
+            return res.redirect('/')
         }
     }
 };

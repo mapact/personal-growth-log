@@ -15,9 +15,8 @@ module.exports = app => {
     app.delete('/logs/:id', logController.destroy);
 
     // edit route
-    // retrieve the current document in edit page
-    // app.get('/shop/edit', shopController.edit);
-
-    // update route
-    // app.put('/shop/:name', logController.update);
+    // 1. retrieve the current document in edit page
+    app.get('/logs/edit', logController.edit);
+    // 2. update route
+    app.put('/logs/:id', logController.update);
 };

@@ -9,10 +9,10 @@ module.exports = app => {
     app.get('/new', logController.getForm);
     
     // show route
-    //app.get('/:log', logController.getOne);
+    app.get('/logs/:id', logController.getOne);
 
     // delete route
-    // app.delete('/shop/:name', shopController.destroy);
+    app.delete('/logs/:id', logController.destroy);
 
     // edit route
     // retrieve the current document in edit page

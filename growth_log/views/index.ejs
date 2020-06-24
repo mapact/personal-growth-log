@@ -34,9 +34,10 @@
             <table class="table" style="width:100%">
             <% logs.forEach((item, index) => { %>
                 <tr> 
-                    <td><%=item.title%></td>
-                    <td><a href="logs/<%=index%>"><%=item.description%></a></td>
+                    <td><a href="logs/<%=item._id%>"><%=item.title%></a></td>
+                    <td><%=item.description%></td>
                     <td><%=item.rate%></td>
+                    <td><%=item._id%></td>
                 </tr>
             <% }) %>
             </table>

@@ -16,29 +16,41 @@
                     <input type="text" class="form-control" id="title-input" name="title">
                 </div>
                 <div class="form-group description">
-                    <label for="entry">Description</label>
+                    <label for="description">Description</label>
                     <textarea class="form-control" id="description-input" name="description"></textarea>
-                </div> Rate growth points today
-                <div class="rate-of-growth form-check-inline">
-                    <input class="rate-of-growth form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="rate-of-growth form-check-label" for="inlineCheckbox1">1</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">2</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label" for="inlineCheckbox3">3</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                    <label class="form-check-label" for="inlineCheckbox4">4</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                    <label class="form-check-label" for="inlineCheckbox5">5</label>
-                  </div>
+                </div> 
+                <div class="form-group rate">
+                    <p>Rate my growth today</p>
+                    <input type="checkbox" id="to-be-improved">
+                    <label for="to-be-improved">To Be Improved</label><br>
+                    <input type="checkbox" id="satisfactory">
+                    <label for="satisfactory">Satisfactory</label><br>
+                    <input type="checkbox" id="i-feel-great">
+                    <label for="i-feel-great">I Feel Great!</label>
+                </div>
+                <div class="container">
+                <p>Date of entry:</p>
+                    <div class="row"> 
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker4'>
+                                    <input type='date' class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                        $(document).ready(function() {
+                            $(function() {
+                                $('.datepicker').datepicker({
+                                    format: 'mm/dd/yyyy',
+                                    startDate: '-3d'
+                                });
+                            });
+                        });   
+                        </script>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <a

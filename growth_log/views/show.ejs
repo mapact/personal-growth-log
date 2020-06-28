@@ -13,8 +13,8 @@
         <ul>
             <li>Title: <%=logs.title%></li>
             <li>Description: <%=logs.description%></li>
-            <li>Rate: <%=logs.rate%></li>
-            <li>Date: <%=logs.date%></li>
+            <li id="rate">Rate: <%=logs.rate%></li>
+            <li id="date">Date: <%=logs.date%></li>
         </ul>
         <p>
             <form method="POST" action="/logs/<%=logs._id%>?_method=DELETE">

@@ -1,8 +1,8 @@
 const logRepository = require('../repositories/logRepository');
 const moment = require('moment');
 const db = require('../db');
-//const logsValidator = require('../validators/logValidator');
-//const ValidationError = require('../exceptions/ValidationError');
+const { update, getMany } = require('../repositories/logRepository');
+const { data } = require('jquery');
 
 module.exports = {
     async getAll (req, res) {
@@ -30,17 +30,21 @@ module.exports = {
         }   
     },
     async destroy (req, res) {
-        try{
-            const logs = await logRepository.destroy(req.params.id);
-            return res.redirect('/')
-        } catch (err) {
-            console.log('error', err);
-        }
+        const logs = await logRepository.destroy(req.params.id);
+        return res.redirect('/')
     },
-    async updateOne (req, res) {
-        try {
-            const logs = await logRepository.update(req.params.id);
-            return res.redirect('/')
-        }
+    async update (req, res) {
+        const logs = await logRepository.getOne(req.params.id);
+        res.render('edit', { logs })
+    },
+    async editOne (req, res) {
+        const editedLog = req.body;
+        const id = req.params.id;
+        await logRepository.updateByID(id, editedLog);
+        res.redirect('/')
+    },
+    async getMany (req,res) {
+        const logs = await logRepository.getMany();
+        res.render('graph', { logs });
     }
 };

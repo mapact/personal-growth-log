@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log</title>
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <div class="container">
+        <h1><%=logs.title%></h1>
+        <a class="btn btn-primary" href="/">back</a>
+        <form method="POST" action="/logs/<%=logs._id%>?_method=PUT" id="edit-log-form">
+            <div class="container py-5">
+                <div class="form-group title">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title-input" name="title" value="<%=logs.title%>">
+                </div>
+                <div class="form-group description">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description-input" name="description"><%=logs.description%></textarea>
+                </div> 
+                <div class="form-check rate">
+                    <p>Rate my growth today</p>
+                    <input type="radio" id="to-be-improved" name="rate" value="to be improved" <%= logs.rate==="to be improved" ? "checked" : "" %>>
+                    <label for="to-be-improved">To Be Improved</label><br>
+                    <input type="radio" id="satisfactory" name="rate" value="satisfactory" <%= logs.rate==="satisfactory" ? "checked" : "" %>>
+                    <label for="satisfactory">Satisfactory</label><br>
+                    <input type="radio" id="i-feel-great" name="rate" value="i feel great" <%= logs.rate==="i feel great" ? "checked" : "" %>>
+                    <label for="i-feel-great">I Feel Great!</label>
+                </div>
+                <div class="container">
+                <p>Date of entry:</p>
+                    <div class="row"> 
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker4'>
+                                    <input type='date' class="form-control" name="date" value="<%=logs.date%>"/>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a
+                    href="/"
+                    class="btn btn-secondary"
+                >
+                    Go Back
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -9,15 +9,19 @@
 <body>
     <div class="container">
         <h1><%=logs.title%></h1>
-        <a class="button" href="/">back</a>
+        <a class="btn btn-primary" href="/">back</a>
         <ul>
             <li>Title: <%=logs.title%></li>
             <li>Description: <%=logs.description%></li>
             <li>Rate: <%=logs.rate%></li>
-            <form method="POST" action="/logs/<%=logs._id%>?_method=DELETE">
-                <button type="submit" class="btn btn-primary">Delete log</button>
-            </form>
+            <li>Date: <%=logs.date%></li>
         </ul>
+        <p>
+            <form method="POST" action="/logs/<%=logs._id%>?_method=DELETE">
+                <button type="submit" class="btn btn-secondary">Delete log</button>
+            </form>
+        </p>
+        <a class="btn btn-primary" href="/logs/<%=logs._id%>/edit">Edit</a>
     </div>
 </body>
 </html>

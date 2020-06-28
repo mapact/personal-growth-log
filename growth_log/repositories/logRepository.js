@@ -11,16 +11,19 @@ module.exports = {
         return db.logs.find().toArray();
     },
     async getOne(id) {
-        const item = await db.logs.findOne({"_id" : ObjectId(id)});
-        return item;
+        const result = await db.logs.findOne({"_id" : ObjectId(id)});
+        return result;
     },
     async destroy(id) {
         const { result } = await db.logs.deleteOne( {"_id" : ObjectId(id)});
         if (!result.n) throw new Error (`Item with id ${id} does not exist!`);
         return result.n;
     },
-    async update(id, data){
-        const { result } = await db.logs.updateOne({"_id" : ObjectId(id)});
-        return result.n;
+    async updateByID(id, data){
+        return db.logs.updateOne({"_id" : ObjectId(id)}, {$set: data})
+    },
+    async getMany () {
+        const result = await db.logs.find().toArray();
+        return result;
     }
-}
+};

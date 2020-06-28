@@ -1,6 +1,7 @@
 const logController = require('./controllers/logController');
 
 module.exports = app => {
+    app.put('/logs/:id', logController.editOne);
     // create post 
     app.post('/', logController.create);
     app.get('/', logController.getAll);
@@ -16,7 +17,9 @@ module.exports = app => {
 
     // edit route
     // 1. retrieve the current document in edit page
-    app.get('/logs/edit', logController.edit);
-    // 2. update route
-    app.put('/logs/:id', logController.update);
+    app.get('/logs/:id/edit', logController.update);
+    // 2. update route above
+    
+    //get graph
+    app.get('/graph', logController.getMany);
 };

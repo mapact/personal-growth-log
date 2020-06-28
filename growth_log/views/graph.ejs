@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log</title>
+    <%- include('./partials/head.ejs') %>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../public/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="canvas">
+            <canvas id="myChart" width="400" height="400" aria-label="chart" role="img"></canvas>
+        </div>
+        <table class="table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% logs.forEach((item, index) => { %>
+                    <tr> 
+                        <td><%=item.date%></td>
+                        <td><%=item.rate%></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="/">back</a>
+    </div>
+</body>
+</html>

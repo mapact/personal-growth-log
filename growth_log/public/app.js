@@ -3,34 +3,41 @@
 $(()=>{
     console.log('connected with graph.ejs'); //this wasnt printed
 
-    //declare graph variables (date and rate)
+    //declare date: x-axis
     let leftTable = $(".table > tbody > tr ")
-    //console.log(leftTable)
     let dates = []
     for (let i=0; i < leftTable.length; i++){
         const date = leftTable[i].children[0].textContent
         dates.push(date);
-    }
-    console.log(dates)
-    //console.log(leftTable[0].children[0].textContent)
-    // const date = $(dateList[0]).text();
-    // const rate = $(dateList[0]).text();
+    };
+    //declare rate: y-axis
+    let rightTable = $(".table > tbody > tr ")
+    let rates = []
+    for (let i=0; i < rightTable.length; i++){
+        let rate = rightTable[i].children[1].textContent;
+        if (rate === "to be improved"){
+            rate = 1;
+        } else if (rate === "satisfactory"){
+            rate = 2;
+        } else if (rate === "i feel great"){
+            rate = 3;
+        }
+        rates.push(rate);
+    };
+    console.log(rates)
+    
     const ctx = $('#myChart')
     const chart = new Chart(ctx, {
-        // The type of chart we want to create
         type: 'line',
-        // The data for our dataset
         data: {
             labels: dates,
             datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
-                data: [0, 1, 2, 3]
+                label: 'Growth over time',
+                BackgroundColor: 'rgba(255, 99, 132, 0.5)',
+                borderColor: 'rgba(121, 7, 242, 1)',
+                data: rates,
+                steppedLine: true
             }]
         },
-    
-        // Configuration options go here
-        options: {}
     });
 });

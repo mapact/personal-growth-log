@@ -31,24 +31,24 @@ I realized, through personal experiences, that growth is not a linear graph. It 
 
 ## User Journey
 ### User Journey 1
-Input by date and the fields
-Input a score (ranged 1-5) based on self-accessment of a particular field
-Submit button
-Store entry into db
-View entry
+1. Input by date and the fields
+2. Input a score (ranged 1-5) based on self-accessment of a particular field
+3. Submit button
+4. Store entry into db
+5. View entry
 
 ### User Journey 2
-View all documented entries
-Continue adding entries
-View most recent by date - WIP
+1. View all documented entries
+2. Continue adding entries
+3. View most recent by date - WIP
 
 ### User Journey 3
 Visualize rates to show progress over time
 
 ## Limitations 
-Dates are not able to be sorted chronologically.
-Y-axis of the graphs are not ideal
-There should have more spectrum of "ratings". Currently, app only limits to three "ratings"
+1. Dates are not able to be sorted chronologically.
+2. Y-axis of the graphs are not ideal
+3. There should have more spectrum of "ratings". Currently, app only limits to three "ratings"
 
 ## Wishlist
 1. To be available in iOS and Android so users can use it on mobile phone

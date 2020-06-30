@@ -1,8 +1,8 @@
 # Personal Growth Log
 ## Introduction
-To track growth in specific skills. Users are able to get a view of their growth on a growth graph.
+To track growth in specific skills. Users are able to get a view of their growth on a growth graph.</br>
 </br>
-In this past 2+ years at Microsoft, I realized it is important to look back and connect the dots. When I first started, I have almost zero soft skills and technical knowledge to begin with. In spirit of the Growth Mindset, I had took on some challenging tasks, which includes stretching beyond my capabilities, taking on (then) daunting tasks and business problems, spending time breaking down into smaller puzzles, and accumulating information and insights to solve them. On certain days, I felt that I hit a plateau, and on some, I felt like it is a breakthrough. 
+In this past 2+ years at Microsoft, I realized it is important to look back and connect the dots. When I first started, I have almost zero soft skills and technical knowledge to begin with. In spirit of the Growth Mindset, I had took on some challenging tasks, which includes stretching beyond my capabilities, taking on (then) daunting tasks and business problems, spending time breaking down into smaller puzzles, and accumulating information and insights to solve them. On certain days, I felt that I hit a plateau, and on some, I felt like it is a breakthrough. </br>
 </br>
 I realized, through personal experiences, that growth is not a linear graph. It takes time for breakthroughts, and internalizing struggles, learnings, as well as being able to look back and reflect. I hope this tool can help me achieve this objectives
 

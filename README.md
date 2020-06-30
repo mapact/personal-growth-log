@@ -28,6 +28,7 @@ I realized, through personal experiences, that growth is not a linear graph. It 
     b. Express for controller and repository
     c. node.JS 
 4. chart.js to show the time graph of learning
+5. moment.js to show dates
 
 ## User Journey
 ### User Journey 1

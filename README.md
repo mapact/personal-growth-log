@@ -2,7 +2,7 @@
 ## Introduction
 To track growth in specific skills. Users are able to get a view of their growth on a growth graph.</br>
 </br>
-In this past 2+ years at Microsoft, I realized it is important to look back and connect the dots. When I first started, I have almost zero soft skills and technical knowledge to begin with. In spirit of the Growth Mindset, I had took on some challenging tasks, which includes stretching beyond my capabilities, taking on (then) daunting tasks and business problems, spending time breaking down into smaller puzzles, and accumulating information and insights to solve them. On certain days, I felt that I hit a plateau, and on some, I felt like it is a breakthrough. </br>
+In this past 2+ years of my career, I realized it is important to look back and connect the dots. When I first started, I have almost zero soft skills and technical knowledge to begin with. In spirit of the Growth Mindset, I had took on some challenging tasks, which includes stretching beyond my capabilities, taking on (then) daunting tasks and business problems, spending time breaking down into smaller puzzles, and accumulating information and insights to solve them. On certain days, I felt that I hit a plateau, and on some, I felt like it is a breakthrough. </br>
 </br>
 I realized, through personal experiences, that growth is not a linear graph. It takes time for breakthroughts, and internalizing struggles, learnings, as well as being able to look back and reflect. I hope this tool can help me achieve this objectives
 
@@ -27,6 +27,7 @@ I realized, through personal experiences, that growth is not a linear graph. It 
     a. MongoDB for db
     b. Express for controller and repository
     c. node.JS 
+4. chart.js to show the time graph of learning
 
 ## User Journey
 ### User Journey 1
@@ -39,16 +40,20 @@ View entry
 ### User Journey 2
 View all documented entries
 Continue adding entries
-View most recent by date
+View most recent by date - WIP
 
 ### User Journey 3
-Visualize score on graph to show progress
+Visualize rates to show progress over time
 
-## Limitations
+## Limitations 
+Dates are not able to be sorted chronologically.
+Y-axis of the graphs are not ideal
+There should have more spectrum of "ratings". Currently, app only limits to three "ratings"
 
 ## Wishlist
-1. To be available in iOS and Android 
+1. To be available in iOS and Android so users can use it on mobile phone
 2. Recommended learning paths and platforms for users to access
-3. Chart out the learning 
 
 ## Learnings
+I learnt so much! If I can put them all on this app, I think it would be a plateau for the longest time, before finally having "turning points". Also, it is about asking the right questions on google and with people.
+I only manage to implement 30% of the original idea, but I plan to continue the project more.

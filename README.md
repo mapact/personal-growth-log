@@ -53,7 +53,9 @@ Visualize rates to show progress over time
 ## Wishlist
 1. To be available in iOS and Android so users can use it on mobile phone
 2. Recommended learning paths and platforms for users to access
+3. Have tags for certain categories
+4. have multiple users logging in their growth journies. And then, aggregate the "ratings" by day 
 
 ## Learnings
 I learnt so much! If I can put them all on this app, I think it would be a plateau for the longest time, before finally having "turning points". Also, it is about asking the right questions on google and with people.
-I only manage to implement 30% of the original idea, but I plan to continue the project more.
+I only manage to implement 30% of the original idea, but I plan to continue the project for my personal learning and internal company hackathons.

@@ -49,6 +49,7 @@ Visualize rates to show progress over time
 1. Dates are not able to be sorted chronologically.
 2. Y-axis of the graphs are not ideal
 3. There should have more spectrum of "ratings". Currently, app only limits to three "ratings"
+4. CSS to make app more palatable
 
 ## Wishlist
 1. To be available in iOS and Android so users can use it on mobile phone

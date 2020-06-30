@@ -32,7 +32,7 @@ I realized, through personal experiences, that growth is not a linear graph. It 
 ## User Journey
 ### User Journey 1
 1. Input by date and the fields
-2. Input a score (ranged 1-5) based on self-accessment of a particular field
+2. Input a score (ranged 1-3) based on self-accessment of a particular field
 3. Submit button
 4. Store entry into db
 5. View entry

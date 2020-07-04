@@ -14,10 +14,15 @@ I had put in too much time trying to figure out the "sequence" of building the a
 3. link routes in repository, and controller (front-end)
 4. make sure front-end is correctly linked to the routes that has been determined
 </br>
+
 **To host the app on Heroku, I can use the following approach:** </br>
-1. make sure directories are correct (ie: put all source codes into src, routes.js and server.js into root folder, and .env is correctly linked to a dynamic port). This also means to include all directory correctly for each folder. (special credits to angrylobster for the dependencies fix)
-2. have Heroku app setup on a whitelist IP (in this case, its 0.0.0.0/0, since it is just a small project)
-3. include mongoDB URL 
+1. make sure directories are correct
+* put all source codes into src, routes.js and server.js into root folder, and .env is correctly linked to a dynamic port
+* include all directory correctly for each folder
+* make sure dependencies are correctly linked to repository.js and controller.js
+2. have Heroku app setup on a whitelist IP 
+* in this case, its 0.0.0.0/0, since it is just a small project
+3. include mongoDB URI 
 4. include mongoDB Atlas cluster, and link it to Heroku
 </br>
 

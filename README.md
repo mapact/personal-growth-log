@@ -24,11 +24,12 @@ I realized, through personal experiences, that growth is not a linear graph. It 
 1. HTML and CSS for frontend web design
 2. Flexbox for website to be responsive
 3. MEN (MongoDB, Express, Node.JS)to design backend for application
-    a. MongoDB for db
+    a. MongoDB for db - deployed on Azure with MongoDB Atlas
     b. Express for controller and repository
     c. node.JS 
 4. chart.js to show the time graph of learning
 5. moment.js to show dates
+6. Heroku to host the application
 
 ## User Journey
 ### User Journey 1

@@ -1,5 +1,5 @@
 const logRepository = require('../repositories/logRepository');
-const moment = require('node_modules/moment');
+const moment = require('../../node_modules/moment');
 const db = require('../db');
 const { update, getMany } = require('../repositories/logRepository');
 const { data } = require('jquery');

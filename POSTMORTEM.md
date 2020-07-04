@@ -2,6 +2,7 @@
 ## Approach and Process
 ### What went well</br>
 Using personal experiences to think about the user experience. I wanted to make something that is able to be used easily. Similar to [this](https://punktapp.me/)
+*disclaimer: this app was found after the creation of this project. It will be used for reference in future developments*
 </br>
 ### What can be done differently</br>
 I had put in too much time trying to figure out the "sequence" of building the application, and did not put too much thought on the folder structure. This caused some trouble when I tried to deployed on Heroku.</br>

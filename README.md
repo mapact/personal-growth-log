@@ -14,19 +14,19 @@ I realized, through personal experiences, that growth is not a linear graph. It 
 4. The app should store and record an input by the dates.
 
 ### Scope of MVP
-1. The MVP of the app will have features for user to:
-    a. enter a new entry
-    b. edit an entry
-    c. view all entries
-    d. delete an entry
+The MVP of the app will have features for user to:
+* enter a new entry
+* edit an entry
+* view all entries
+* delete an entry
 
 ## Technology Utilized
 1. HTML and CSS for frontend web design
 2. Flexbox for website to be responsive
 3. MEN (MongoDB, Express, Node.JS)to design backend for application
-    a. MongoDB Atlas Cluster, to store database. It is hosted on Azure
-    b. Express for controller and repository
-    c. node.JS 
+    * MongoDB Atlas Cluster, to store database. It is hosted on Azure
+    * Express for controller and repository
+    * node.JS 
 4. chart.js to show the time graph of learning
 5. moment.js to show dates
 6. Heroku to host the application

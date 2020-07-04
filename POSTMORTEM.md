@@ -1,9 +1,23 @@
 # Personal Growth Log - POST MORTEM
 ## Approach and Process
 ### What went well</br>
-Using personal experiences to think about the 
-
-### What can be done differently
+Using personal experiences to think about the user experience. I wanted to make something that is able to be used easily. Similar to [this](https://punktapp.me/)
+</br>
+### What can be done differently</br>
+I had put in too much time trying to figure out the "sequence" of building the application, and did not put too much thought on the folder structure. This caused some trouble when I tried to deployed on Heroku.</br>
+</br>
+**I learnt that the approach can be as followed:**</br>
+1. install dependencies and libraries
+2. determine routes (CRUD operations)
+3. link routes in repository, and controller (front-end)
+4. make sure front-end is correctly linked to the routes that has been determined
+</br>
+**To host the app on Heroku, I can use the following approach:** </br>
+1. make sure directories are correct (ie: put all source codes into src, routes.js and server.js into root folder, and .env is correctly linked to a dynamic port). This also means to include all directory correctly for each folder. (special credits to angrylobster for the dependencies fix)
+2. have Heroku app setup on a whitelist IP (in this case, its 0.0.0.0/0, since it is just a small project)
+3. include mongoDB URL 
+4. include mongoDB Atlas cluster, and link it to Heroku
+</br>
 
 ## Code and Code Design
 ### What went well</br>

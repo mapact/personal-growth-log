@@ -1,7 +1,7 @@
 const db = require('../db');
 const { getOne, destroy } = require('../controllers/logController');
 const { ObjectId } = require('mongodb');
-const { updateLocale } = require('node_modules/moment');
+const { updateLocale } = require('../../node_modules/moment');
 
 module.exports = {
     create(data) {

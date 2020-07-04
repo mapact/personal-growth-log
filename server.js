@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const port = process.env.PORT || 3000;
-const db = require('../db');
+const db = require('./src/db');
 const methodOverride = require('method-override')
 
 app.use(express.static('public'));

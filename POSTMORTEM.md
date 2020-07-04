@@ -24,7 +24,7 @@ I did not implement TDD in the repository directory as I have not fully understa
 3. Having dropdown of multiple options from "Index" page to include delete and edit function (Alvis' project)
 4. Include tags as categories, and query the data by tags
 5. Have placeholder texts
-6. Render the graph by not storing data within <graph.ejs>. Currently, I was able to pull the data from 
+6. Render the graph by not storing data within <graph.ejs>. Currently, I was able to pull the data from the graph, but I need to be able to write the code in a way that the data can be pulled directly from MongoDB as the current view is not idea
 
 ## Future development: back-end codes
 1. TDD test cases on the repository directory

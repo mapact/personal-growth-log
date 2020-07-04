@@ -31,3 +31,4 @@ I did not implement TDD in the repository directory as I have not fully understa
 2. Formatter and validator on the data that has been entered
 3. User sign in/sign up formatter and validator
 4. User sign in route and journey
+5. Error handling

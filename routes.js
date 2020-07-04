@@ -1,4 +1,4 @@
-const logController = require('./controllers/logController');
+const logController = require('./src/controllers/logController');
 
 module.exports = app => {
     app.put('/logs/:id', logController.editOne);
